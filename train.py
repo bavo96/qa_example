@@ -13,15 +13,13 @@ if __name__ == "__main__":
     # SET ENVIRONMENT
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-    model_list = ['bert', 'roberta', 'bartpho']
-    model_name = model_list[1]
+    model_list = ['bert', 'roberta']
+    model_name = model_list[2]
 
     if model_name == 'roberta':
         url = "xlm-roberta-base"
     elif model_name == 'bert':
         url = "deepset/bert-base-cased-squad2"
-    elif model_name == 'bartpho':
-        url = "vinai/bartpho-syllable"
 
     ## LOAD CONFIG
     cfg = config.Config(

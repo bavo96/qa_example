@@ -9,7 +9,7 @@ def preprocess_training_data(examples, tokenizer, max_length, stride):
         truncation="only_second",
         return_offsets_mapping=True,
         padding="max_length",
-        stride=stride
+        stride=stride,
     )
 
     offset_mapping = inputs.pop("offset_mapping")
