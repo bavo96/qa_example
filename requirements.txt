@@ -1,0 +1,13 @@
+transformers[torch]==4.34.0
+torch
+six
+spicy
+datasets 
+evaluate
+simplejson
+monotonic
+jwt
+oauthlib
+future
+tensorboard
+sentencepiece # for bartpho
